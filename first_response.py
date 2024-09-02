@@ -3,7 +3,7 @@ import csv
 from datetime import datetime
 
 # Configuration
-group_id = "831"  # Replace with your Group ID
+group_id = "XXX"  # Replace with your Group ID
 access_token = ""  # Replace with your GitLab Personal Access Token
 base_url = f"https://gitlab.com/api/v4/groups/{group_id}/issues?created_after=2024-05-01&label_name=Customer%20Created"
 csv_file_path = "/Path/To/File/Goes/Here/output_may.csv"  # Specify your desired CSV path
