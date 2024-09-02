@@ -3,7 +3,7 @@ import csv
 from datetime import datetime
 
 # Configuration
-group_id = "groupid"  # Project ID or Group ID
+group_id = "XXX"  # Project ID or Group ID
 access_token = ""
 base_url = f"https://gitlab.com/api/v4/groups/{group_id}/issues?created_after=2024-04-01&created_before=2024-05-01"
 csv_file_path = "/path/to/file/goeshere.csv"  # Path to the CSV file
