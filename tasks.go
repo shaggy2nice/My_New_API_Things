@@ -307,7 +307,7 @@ func loadTasks(filename string) ([]*Task, []*Task, error) {
 }
 
 func main() {
-	tasks, archivedTasks, err := loadTasks("tasks.json")
+	tasks, archivedTasks, err := loadTasks("my_new_tasks.json")
 	if err != nil {
 		fmt.Println("Error loading tasks:", err)
 		tasks = []*Task{}
@@ -336,7 +336,7 @@ func main() {
 		case "V":
 			displayArchivedTasks(archivedTasks)
 		case "Q":
-			err := saveTasks(tasks, archivedTasks, "tasks.json")
+			err := saveTasks(tasks, archivedTasks, "my_new_tasks.json")
 			if err != nil {
 				fmt.Println("Error saving tasks:", err)
 			} else {
